@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Car Added</title>
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <div class="bg-white shadow-md rounded-lg p-8 max-w-md text-center mx-auto my-10">
+      <!-- Success icon + heading -->
+      <div
+        class="mb-4 inline-flex items-center justify-center w-12 h-12 rounded-full bg-green-100 text-green-600 mx-auto"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-6 h-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m2 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          />
+        </svg>
+      </div>
+      <h1 class="text-2xl font-semibold text-gray-800 mb-2">
+        Car Added Successfully!
+      </h1>
+      <p class="text-gray-600 mb-6">Your new car record has been created.</p>
+
+      <div
+        class="bg-green-50 border-l-4 border-green-400 text-green-700 text-sm px-4 py-3 rounded-md mb-6"
+        role="alert"
+      >
+        <p>
+          <span class="font-medium">Success:</span> Your car has been added to
+          the inventory.
+        </p>
+      </div>
+
+      <a
+        href="/"
+        class="inline-block px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition"
+      >
+        View All Cars
+      </a>
+    </div>
+  </body>
+</html>
