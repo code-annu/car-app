@@ -7,6 +7,8 @@ const { carRouter } = require("./routers/car-router");
 
 const app = express();
 
+app.use(express.urlencoded({ extended: true }));
+
 app.set("view engine", "ejs");
 app.set("views", path.join(rootDir, "views"));
 
